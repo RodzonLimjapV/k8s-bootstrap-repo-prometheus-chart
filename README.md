@@ -104,6 +104,11 @@ kubectl get svc -n monitoring
 
 ![alt text](image-2.png)
 
+Should see :
+- Kubernetes node → Ready
+- Prometheus pod → Running (1/1)
+- Service → NodePort (30090) exposed
+
 ## Access Prometheus
 
 http://< EC2-PUBLIC-IP >:30090  
