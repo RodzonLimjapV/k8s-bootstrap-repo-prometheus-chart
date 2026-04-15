@@ -120,6 +120,11 @@ http://< EC2-PUBLIC-IP >:30090/alerts
 
 ![alt text](image.png)
 
+Should see :
+- Rule group → test
+- Rule file → Running (1/1)
+- Alert name → AlwaysFiring
+
 ---
 
 ## Validation Checklist
