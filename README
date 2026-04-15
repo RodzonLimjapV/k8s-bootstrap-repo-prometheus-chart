@@ -1,5 +1,10 @@
 # Kubernetes Bootstrap + Prometheus Deployment
-Kubernetes bootstrap and monitoring setup using a DevOps best-practice approach. It leverages a Packer-built golden AMI and Terraform-provisioned infrastructure, followed by automated cluster initialization using kubeadm. Prometheus is deployed via a custom Helm chart with separated ConfigMaps for configuration and alert rules, enabling dynamic updates and observability validation. The included scripts provide a reproducible, step-by-step workflow for provisioning, deployment, and verification in a consistent and automated manner.
+Kubernetes bootstrap and monitoring setup using a DevOps best-practice approach. 
+It leverages a Packer-built golden AMI and Terraform-provisioned infrastructure, followed by automated 
+cluster initialization using kubeadm. Prometheus is deployed via a custom Helm chart with separated ConfigMaps 
+for configuration and alert rules, enabling dynamic updates and observability validation. 
+The included scripts provide a reproducible, step-by-step workflow for provisioning, deployment, and 
+verification in a consistent and automated manner.
 
 ## Steps
 1. Initialize cluster
