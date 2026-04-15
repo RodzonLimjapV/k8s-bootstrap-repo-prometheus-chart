@@ -22,6 +22,14 @@ chmod +x scripts/*.sh
 ./scripts/03-install-cni.sh
 ./scripts/04-install-helm.sh
 ./scripts/05-deploy-prometheus.sh
+ kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+ kubectl get pods -n monitoring
+ kubectl get svc -n monitoring
 ./scripts/06-update-configmap.sh
 ./scripts/07-verify.sh
+
+http://<EC2-PUBLIC-IP>:30090
+http://<EC2-PUBLIC-IP>:30090/alerts
+
+
 
