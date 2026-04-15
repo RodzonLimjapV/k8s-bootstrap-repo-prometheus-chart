@@ -102,6 +102,7 @@ kubectl get svc -n monitoring
 ./scripts/07-verify.sh
 ```
 
+![alt text](image-2.png)
 
 ## Access Prometheus
 
