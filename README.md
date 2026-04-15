@@ -125,6 +125,7 @@ Should see :
 - Rule file → Running (1/1)
 - Alert name → AlwaysFiring
 
+
 ---
 
 ## Validation Checklist
