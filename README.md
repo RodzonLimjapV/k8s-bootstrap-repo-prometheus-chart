@@ -46,23 +46,58 @@ git clone https://github.com/RodzonLimjapV/k8s-bootstrap-repo-prometheus-chart.g
 cd k8s-bootstrap-repo-prometheus-chart
 
 ### Run Scripts
+
+#### 1. Make Scripts Executable
+```bash
 chmod +x scripts/*.sh
+```
 
+#### 2. Initialize Kubernetes Cluster
+```bash
 ./scripts/01-init-cluster.sh
+```
+
+#### 3. Configure kubectl
+```bash
 ./scripts/02-configure-kubectl.sh
+```
+
+#### 4. Install CNI Plugin
+```bash
 ./scripts/03-install-cni.sh
+```
+
+#### 5. Install Helm
+```bash
 ./scripts/04-install-helm.sh
+```
+
+#### 6. Deploy Prometheus
+```bash
 ./scripts/05-deploy-prometheus.sh
+```
 
+#### 7. Allow Workloads on Control Plane (Optional)
+```bash
 kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+```
 
+#### 8. Verify Monitoring Resources
+```bash
 kubectl get pods -n monitoring
 kubectl get svc -n monitoring
+```
 
+#### 9. Update ConfigMap (if needed)
+```bash
 ./scripts/06-update-configmap.sh
-./scripts/07-verify.sh
+```
 
----
+#### 10. Final Verification
+```bash
+./scripts/07-verify.sh
+```
+
 
 ## Access Prometheus
 
