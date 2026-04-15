@@ -11,6 +11,10 @@ Kubernetes bootstrap and monitoring setup using a DevOps best-practice approach.
 7. Verify
 
 ## Usage
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+sudo yum install -y git
+git clone https://github.com/RodzonLimjapV/k8s-bootstrap-repo-prometheus-chart.git
+
 chmod +x scripts/*.sh
 
 ./scripts/01-init-cluster.sh
