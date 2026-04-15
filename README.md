@@ -101,8 +101,8 @@ kubectl get svc -n monitoring
 
 ## Access Prometheus
 
-http://<EC2-PUBLIC-IP>:30090  
-http://<EC2-PUBLIC-IP>:30090/alerts
+http://< EC2-PUBLIC-IP >:30090  
+http://< EC2-PUBLIC-IP >:30090/alerts
 
 ---
 
