@@ -38,12 +38,16 @@ and alert rules, enabling dynamic updates and observability validation.
 ## Usage
 
 ### Prerequisites
+```bash
 sudo yum install -y git
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
 
 ### Clone Repository
+```bash
 git clone https://github.com/RodzonLimjapV/k8s-bootstrap-repo-prometheus-chart.git
 cd k8s-bootstrap-repo-prometheus-chart
+```
 
 ### Run Scripts
 
