@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-rules
+data:
+  alert.rules: |
+    groups:
+    - name: test
+      rules:
+      - alert: AlwaysFiring
+        expr: vector(1)
+        for: 1m
